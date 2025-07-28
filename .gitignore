@@ -1,20 +1,10 @@
-# Bytecode
 __pycache__/
-*.py[cod]
-*.pyo
-
-# Environment + Docker
+*.pyc
 .env
-*.env
-*.db
-*.sqlite
-*.log
-
-# Airflow
+.env.*
 logs/
-airflow.db
-
-# System
+data_lake/
+postgres_data/
+airflow.cfg
+*.db
 .DS_Store
-.vscode/
-.idea/

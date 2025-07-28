@@ -1,9 +1,7 @@
 pandas
+psycopg2-binary
+sqlalchemy
 scikit-learn
 streamlit
-psycopg2-binary
 python-dotenv
-apache-airflow==2.9.1
-numpy
-altair
-plotly
+
