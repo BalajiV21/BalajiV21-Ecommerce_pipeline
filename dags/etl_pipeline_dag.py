@@ -1,5 +1,5 @@
-from airflow import DAG
-from airflow.operators.bash import BashOperator
+from airflow import DAG # type: ignore
+from airflow.operators.bash import BashOperator # type: ignore
 from datetime import datetime, timedelta
 
 default_args = {
@@ -12,7 +12,7 @@ with DAG(
     dag_id='shopwise_etl_pipeline',
     default_args=default_args,
     start_date=datetime(2024, 1, 1),
-    schedule_interval='@hourly',  # or use None to trigger manually
+    schedule_interval=None,  # or use None to trigger manually
     catchup=False
 ) as dag:
 
